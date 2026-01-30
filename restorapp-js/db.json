@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nombre": "Prueba"
+    },
+    {
+      "id": "2f3b",
+      "fullName": "JANNER GONZALEZ",
+      "email": "jannergonpa.10@gmail.com",
+      "password": "JAnner",
+      "confirmPassword": "Janner",
+      "type": "User"
+    }
+  ]
+}
