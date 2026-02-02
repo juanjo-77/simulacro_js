@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/loginStyle.css">
+  <title>Login</title>
+</head>
+<body>
+  
+   
+  <div class="login">
+
+    <img style="align-items:center;" src="/imagenes/emogi.png" height="59px">
+
+     <h2 style="text-align: center;">RestorApp</h2>
+     <h6 style="text-align: center;">Login to your account</h6><br>
+
+    <div>
+      <label for="">Full Name</label><br>
+      <input type="text" id="name" placeholder="e.g. John Doe"><br><br>
+    </div>
+
+    <div>
+      <label for="">Email Address</label><br>
+      <input type="email" id="email" placeholder="name@example.com"><br><br>
+    </div>
+
+    <div>
+      <label for="">Select Role</label><br>
+
+      <select id="role">
+      <option id="select">Selecciona un rol</option>
+      <option>Usuario</option>
+      <option id="admon">Admin</option>
+    </select><br><br>
+
+    </div>
+
+
+    <div class="d-grid gap-2 ">
+      <button id="register" class="btn btn-success" >Registrarse</button>
+    </div>
+
+    
+
+    <p id="msg"></p>
+  </div>
+
+  <script src="/js/login.js"></script>
+
+</body>
+</html>

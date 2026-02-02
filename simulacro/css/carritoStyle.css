@@ -1,0 +1,26 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+button{
+    background-color: rgb(252, 103, 103);
+    border: #ffffff;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 12px;
+    transition: transform 0.2s ease;
+}
+
+button:hover{
+    transform: scale(1.08);
+}
+
+
+#btnPedido{
+    background-color: rgb(138, 252, 103);
+    display: flex;
+    margin: 0 auto;
+}

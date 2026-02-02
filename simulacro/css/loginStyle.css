@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;     /* vertical */
+    height: 100vh;           /* altura completa de la ventana */
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e0fad54b;
+}
+
+#emoji {
+    display: flex;
+    justify-content: center;
+}
+
+.login {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;          
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}

@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/userStyle.css">
+    <title>Document</title>
+</head>
+<body>
+
+<header class="header">
+    <h3>RestorApp</h3>
+    <nav id="nav">
+        <a href="">Menu</a>
+        <a href="">My Orders</a>
+        <a href="">Profile</a>
+        <a href="/html/login.html">Log Out</a>
+    </nav>
+</header>
+
+<hr>
+
+<h1>Our Menu</h1>
+
+<!-- Contenedor flex para menú e iframe -->
+<div class="container">
+    <!-- Menú de ordenes -->
+    <section class="menu">
+        <div class="orden_user">
+            <img src="/imagenes/burger1.png" alt="">
+            <h4>Classic beef Burger</h4>
+            <p>$8.99</p>
+            <p>Premium beef patty width <br>
+                chedar cheese, lettuse....
+            </p>
+            <button class="btnAdd" data-nombre="burger1" data-precio="8.99">Add to order</button>
+        </div>
+        <div class="orden_user">
+            <img src="/imagenes/burger2.jpg" alt="">
+            <h4>Doble Bacon Melt</h4>
+            <p>$12.50</p>
+            <p>Two patties with cheddar cheese, lettuce....</p>
+            <button class="btnAdd" data-nombre="burger2" data-precio="12.50">Add to order</button>
+        </div>
+        <div class="orden_user">
+            <img src="/imagenes/papas.jpeg" alt="">
+            <h4>Golden Fries</h4>
+            <p>$3.99</p>
+            <p>Freshly fried fries with cheddar cheese....</p>
+            <button class="btnAdd" data-nombre="papas" data-precio="3.99">Add to order</button>
+        </div>
+        <div class="orden_user">
+            <img src="/imagenes/cola.jpeg" alt="">
+            <h4>Cola Zero</h4>
+            <p>$2.50</p>
+            <p>Refreshing Cola Zero beverage....</p>
+            <button class="btnAdd" data-nombre="coca" data-precio="2.50">Add to order</button>
+        </div>
+        <div class="orden_user">
+            <img src="/imagenes/dona.jpeg" alt="">
+            <h4>Donut Box</h4>
+            <p>$6.00</p>
+            <p>Delicious donut box with a variety....</p>
+            <button class="btnAdd" data-nombre="dona" data-precio="6.00">Add to order</button>
+        </div>
+        <div class="orden_user">
+            <img src="/imagenes/peperoni.jpg" alt="">
+            <h4>Pepperoni Slice</h4>
+            <p>$4.50</p>
+            <p>Classic pepperoni pizza slice....</p>
+            <button class="btnAdd" data-nombre="peperoni" data-precio="4.50">Add to order</button>
+        </div>
+    </section>
+
+
+
+    <!-- Iframe a la derecha -->
+    <iframe id="iframe" src="/html/carrito.html" class="order-frame" height="400" width="400"></iframe>
+
+</div>
+
+
+    <script src="/js/usuario.js"></script>
+
+</body>
+</html>

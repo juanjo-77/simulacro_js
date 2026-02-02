@@ -1,0 +1,91 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #b6f79a4b;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+#nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* Contenedor principal para menú e iframe */
+.container {
+    display: flex;            
+    justify-content: space-between; 
+    gap: 20px;                
+    padding: 20px;
+}
+
+/* Menú de ordenes */
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    flex: 1;                 
+}
+
+
+.orden_user {
+    background-color: rgba(248, 120, 70, 0.493);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Iframe se mantiene a la derecha */
+#iframe {
+    flex-shrink: 0;           /* El iframe no se reduce de tamaño */
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+        gap: 30px;
+    }
+
+    .menu {
+        grid-template-columns: 1fr;
+    }
+
+    #iframe {
+        width: 100%; /* El iframe ocupa el 100% en pantallas pequeñas */
+    }
+}
+
+
+
+.orden_user img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+
+button{
+    background-color: rgb(138, 252, 103);
+    border: #ffffff;
+    border-radius: 8px;
+    padding: 8px;
+    transition: transform 0.2s ease;
+}
+
+button:hover{
+    transform: scale(1.08);
+}
