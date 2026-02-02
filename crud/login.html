@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sistema CRUD</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="contenedor-login">
+        <div class="caja-login">
+            <h1>Iniciar Sesión</h1>
+            <form id="formularioLogin">
+                <div class="grupo-input">
+                    <label>Usuario</label>
+                    <input type="text" id="usuario" required>
+                </div>
+                <div class="grupo-input">
+                    <label>Contraseña</label>
+                    <input type="password" id="contrasena" required>
+                </div>
+                <button type="submit">Entrar</button>
+                <p class="mensaje" id="mensaje"></p>
+            </form>
+            <div class="info-usuarios">
+                <h3>Usuarios de prueba:</h3>
+                <p><strong>Admin:</strong> admin / admin123</p>
+                <p><strong>Usuario:</strong> user / user123</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>

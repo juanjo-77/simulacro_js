@@ -1,0 +1,25 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+
+.contenedor-login { display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+.caja-login { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); max-width: 400px; width: 100%; }
+.caja-login h1 { text-align: center; margin-bottom: 30px; color: #333; }
+
+.grupo-input { margin-bottom: 20px; }
+.grupo-input label { display: block; margin-bottom: 5px; color: #555; font-weight: bold; }
+.grupo-input input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 16px; }
+
+button { width: 100%; padding: 12px; background: #667eea; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; font-weight: bold; }
+button:hover { background: #5568d3; }
+
+.mensaje { margin-top: 15px; text-align: center; font-weight: bold; }
+.mensaje.error { color: red; }
+.mensaje.exito { color: green; }
+
+.info-usuarios { margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd; }
+.info-usuarios h3 { font-size: 14px; margin-bottom: 10px; color: #666; }
+.info-usuarios p { font-size: 13px; color: #888; margin: 5px 0; }
+
+@media (max-width: 480px) {
+    .caja-login { padding: 30px 20px; }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Usuario</title>
+    <link rel="stylesheet" href="css/usuario.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <h1>Panel de Usuario</h1>
+            <div class="usuario-info">
+                <span id="nombreUsuario"></span>
+                <button onclick="cerrarSesion()">Salir</button>
+            </div>
+        </header>
+
+        <main>
+            <h2>Lista de Productos</h2>
+            <div class="tabla-contenedor">
+                <table id="tablaProductos">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Categoría</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listaProductos">
+                        <!-- Los productos se cargan aquí -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="js/usuario.js"></script>
+</body>
+</html>
