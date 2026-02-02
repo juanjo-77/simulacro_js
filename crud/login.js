@@ -1,11 +1,11 @@
 // Lista de usuarios válidos (en un sistema real esto estaría en una base de datos)
-var usuariosValidos = [
+const usuariosValidos = [
     { usuario: 'admin', contrasena: 'admin123', rol: 'admin', nombre: 'Administrador' },
     { usuario: 'user', contrasena: 'user123', rol: 'usuario', nombre: 'Usuario Normal' }
 ];
 
 // Obtener el formulario de login
-var formulario = document.getElementById('formularioLogin');
+const formulario = document.getElementById('formularioLogin');
 
 // Escuchar cuando se envía el formulario
 formulario.addEventListener('submit', function(evento) {
@@ -13,16 +13,16 @@ formulario.addEventListener('submit', function(evento) {
     evento.preventDefault();
     
     // Obtener los valores ingresados
-    var usuarioIngresado = document.getElementById('usuario').value;
-    var contrasenaIngresada = document.getElementById('contrasena').value;
-    var mensajeElemento = document.getElementById('mensaje');
+    const usuarioIngresado = document.getElementById('usuario').value;
+    const contrasenaIngresada = document.getElementById('contrasena').value;
+    const mensajeElemento = document.getElementById('mensaje');
     
     // Variable para saber si encontramos el usuario
-    var usuarioEncontrado = null;
+    let usuarioEncontrado = null;
     
     // Buscar el usuario en la lista
-    for (var i = 0; i < usuariosValidos.length; i++) {
-        var user = usuariosValidos[i];
+    for (let i = 0; i < usuariosValidos.length; i++) {
+        const user = usuariosValidos[i];
         // Verificar si el usuario y contraseña coinciden
         if (user.usuario === usuarioIngresado && user.contrasena === contrasenaIngresada) {
             usuarioEncontrado = user;
